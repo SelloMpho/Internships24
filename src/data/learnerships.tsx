@@ -99,7 +99,7 @@ const learnerships: Learnership[] = [
   {
     title: "BANKSETA: Banking & Finance Learnership",
     key: "bankseta",
-    applyLink: "https://www.sseta.co.za/2025/12/2026-learnerships/",
+    applyLink: "https://www.bankseta.org.za/skills-development/learning-programmes/learnerships/",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> Banking sector learnerships offering structured training and on-the-job experience in banking and financial services roles.</p>

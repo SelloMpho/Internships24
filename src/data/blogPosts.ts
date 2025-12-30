@@ -25,6 +25,29 @@ export const blogPosts: BlogPost[] = [
 
 Finding the right internship as a graduate in South Africa can be challenging, but it's also one of the most important steps in launching your career. This comprehensive guide covers the top internship opportunities available for 2026.
 
+## Top 2026 Internship Opportunities
+
+### 1. Services SETA: Internships 2026
+The Services Sector Education and Training Authority (Services SETA) is running a national internship programme (PowerX²) to place graduates into workplace training across public and private employers.
+- **Duration**: Typically 24 months.
+- **Stipend**: ~R7,000 pm.
+[Click here to apply !!!](https://www.servicesseta.org.za/)
+
+### 2. Department of Tourism: Internship 2026
+A 24-month paid internship for unemployed South African graduates to work in government tourism and administrative functions.
+- **Stipend**: ~R7,450.58 per month.
+[Click here to apply !!!](https://www.tourism.gov.za/CurrentProjects/Pages/Internships.aspx)
+
+### 3. Mercedes-Benz: Graduate Internships 2026
+Mercedes-Benz South Africa's Graduate Development Programme (GDP) 2026 offers practical experience at a world-class automotive company.
+- **Location**: Pretoria, Gauteng.
+- **Requirements**: Minimum 65% average.
+[Click here to apply !!!](https://corporate.mercedes-benz.co.za/careers/)
+
+### 4. SA Government: Internship 2026
+The South African Government runs internship and in-service training programmes across many departments (Health, Home Affairs, Public Works, Police, Municipalities, etc.).
+[Click here to apply !!!](https://www.gov.za/about-government/government-programmes/internships)
+
 ## Why Internships Matter for Graduates
 
 Internships provide invaluable work experience that bridges the gap between academic learning and professional employment. They offer:

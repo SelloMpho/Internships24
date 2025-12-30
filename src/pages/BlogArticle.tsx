@@ -347,13 +347,19 @@ const BlogArticle = () => {
                       {isTopInternshipsGuide ? "Graduate and early-career opportunities across South Africa for 2026." : "Gain nationally recognised qualifications with workplace experience and stipends."}
                     </p>
 
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <User className="h-4 w-4" />
-                        <span>Internships24</span>
-                      </div>
-                      <Button variant="outline" size="sm" onClick={(e) => { e.stopPropagation(); navigate(`/internship/${item.key}`); }}>View Details</Button>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <User className="h-4 w-4" />
+                      <span>Internships24</span>
                     </div>
+                    {item.applyLink ? (
+                      <Button variant="accent" size="sm" asChild onClick={(e) => e.stopPropagation()}>
+                        <a href={item.applyLink} target="_blank" rel="noopener noreferrer">Click here to apply !!!</a>
+                      </Button>
+                    ) : (
+                      <Button variant="outline" size="sm" onClick={(e) => { e.stopPropagation(); navigate(`/internship/${item.key}`); }}>View Details</Button>
+                    )}
+                  </div>
                   </article>
                 </div>
               ))}
@@ -428,6 +434,11 @@ function formatContent(content: string): string {
       // Warning/emoji lines
       if (line.includes('🚩') || line.includes('⚠️')) {
         return `<p class="bg-destructive/10 p-3 rounded-lg my-2">${line}</p>`;
+      }
+      // Internal Link design
+      if (line.includes('[Click here to apply !!!]')) {
+        const url = line.match(/\((.*?)\)/)?.[1] || '#';
+        return `<div class="my-6"><a href="${url}" target="_blank" rel="noopener noreferrer" class="inline-block bg-accent text-accent-foreground px-6 py-3 rounded-lg font-bold hover:bg-accent/90 transition-colors shadow-lg animate-pulse">Click here to apply !!!</a></div>`;
       }
       // Empty lines
       if (line.trim() === '') {
