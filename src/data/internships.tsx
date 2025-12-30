@@ -4,12 +4,14 @@ export interface InternshipData {
   title: string;
   key: string;
   details: JSX.Element;
+  applyLink?: string;
 }
 
 export const internships: InternshipData[] = [
   {
     title: "Services SETA: Internships 2026",
     key: "services-seta",
+    applyLink: "https://www.graduates24.com/Apply/13405",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> The Services Sector Education and Training Authority (Services SETA) is running a national internship programme (PowerX²) to place graduates into workplace training across public and private employers.</p>
@@ -33,9 +35,6 @@ export const internships: InternshipData[] = [
         <div>
           <p className="font-semibold">Fields:</p>
           <p>Various including Finance, HR, Marketing, ICT, Business/Admin depending on host placements.</p>
-          <p className="mt-3">
-            <a href="https://www.graduates24.com/Apply/13405" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Click here to apply !!!</a>
-          </p>
         </div>
       </div>
     ),
@@ -43,6 +42,7 @@ export const internships: InternshipData[] = [
   {
     title: "Department of Tourism: Internship 2026",
     key: "dept-tourism",
+    applyLink: "https://www.graduates24.com/Apply/13297",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> A 24-month paid internship for unemployed South African graduates to work in government tourism and administrative functions.</p>
@@ -76,9 +76,6 @@ export const internships: InternshipData[] = [
         <div>
           <p className="font-semibold">Application:</p>
           <p>Submit Z83 form + CV + certified copies of ID and qualifications.</p>
-          <p className="mt-3">
-            <a href="https://www.graduates24.com/Apply/13297" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Click here to apply !!!</a>
-          </p>
         </div>
       </div>
     ),
@@ -86,6 +83,7 @@ export const internships: InternshipData[] = [
   {
     title: "Visa: Internship Opportunities 2026",
     key: "visa",
+    applyLink: "https://www.graduates24.com/Apply/13061",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> Visa South Africa internships are typically corporate internships (often in tech, business, and finance). Official 2026 details may not be fully published yet.</p>
@@ -99,15 +97,13 @@ export const internships: InternshipData[] = [
           </ul>
         </div>
         <p className="text-muted-foreground">Note: Once official Visa postings open, they’ll list specific qualification matches and duties.</p>
-        <p className="mt-3">
-          <a href="https://www.graduates24.com/Apply/13061" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Click here to apply !!!</a>
-        </p>
       </div>
     ),
   },
   {
     title: "SA Government: Internship 2026",
     key: "sa-govt",
+    applyLink: "https://www.graduates24.com/jobs/viewjob/5565",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> The South African Government runs internship and in-service training programmes across many departments (Health, Home Affairs, Public Works, Police, Municipalities, etc.).</p>
@@ -134,9 +130,6 @@ export const internships: InternshipData[] = [
         <div>
           <p className="font-semibold">Benefits:</p>
           <p>Structured workplace exposure, usually with a monthly stipend.</p>
-          <p className="mt-3">
-            <a href="https://www.graduates24.com/jobs/viewjob/5565" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Click here to apply !!!</a>
-          </p>
         </div>
       </div>
     ),
@@ -144,6 +137,7 @@ export const internships: InternshipData[] = [
   {
     title: "Mercedes-Benz: Graduate Internships 2026",
     key: "mercedes-benz",
+    applyLink: "https://www.graduates24.com/Apply/13341e",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> Mercedes-Benz South Africa’s Graduate Development Programme (GDP) 2026 offers practical experience at a world-class automotive company.</p>
@@ -172,9 +166,6 @@ export const internships: InternshipData[] = [
         <div>
           <p className="font-semibold">Location:</p>
           <p>Pretoria, Gauteng.</p>
-          <p className="mt-3">
-            <a href="https://www.graduates24.com/Apply/13341e" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Click here to apply !!!</a>
-          </p>
         </div>
       </div>
     ),
@@ -182,6 +173,7 @@ export const internships: InternshipData[] = [
   {
     title: "Pernod Ricard: Graduate Internships 2026",
     key: "pernod-ricard",
+    applyLink: "https://www.graduates24.com/Apply/13389",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> Pernod Ricard South Africa offers a 12-month YES Graduate Internship Programme focused on business functions.</p>
@@ -205,9 +197,6 @@ export const internships: InternshipData[] = [
             <li>Human Resources</li>
             <li>Corporate Affairs</li>
           </ul>
-          <p className="mt-3">
-            <a href="https://www.graduates24.com/Apply/13389" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Click here to apply !!!</a>
-          </p>
         </div>
       </div>
     ),
@@ -215,6 +204,7 @@ export const internships: InternshipData[] = [
   {
     title: "Unilever: Learnership Opportunities 2026",
     key: "unilever",
+    applyLink: "https://www.graduates24.com/Apply/13390",
     details: (
       <div className="space-y-4">
         <div>
@@ -235,9 +225,6 @@ export const internships: InternshipData[] = [
             <li>Teamwork and safety awareness.</li>
             <li>Communication and problem-solving focus.</li>
           </ul>
-          <p className="mt-3">
-            <a href="https://www.graduates24.com/Apply/13390" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Click here to apply !!!</a>
-          </p>
         </div>
       </div>
     ),
@@ -245,6 +232,7 @@ export const internships: InternshipData[] = [
   {
     title: "South African National Roads Agency (SANRAL): Internships 2026",
     key: "sanral",
+    applyLink: "https://www.graduates24.com/Apply/13386",
     details: (
       <div className="space-y-4">
         <div>
@@ -265,9 +253,6 @@ export const internships: InternshipData[] = [
             <li>CV, cover letter, ID, certified qualifications & transcripts.</li>
             <li>Able to relocate to Pretoria.</li>
           </ul>
-          <p className="mt-3">
-            <a href="https://www.graduates24.com/Apply/13386" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Click here to apply !!!</a>
-            </p>
         </div>
       </div>
     ),
