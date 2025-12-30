@@ -98,6 +98,19 @@ const InternshipDetail: React.FC = () => {
           <div className="prose prose-neutral dark:prose-invert mt-6 max-w-none">
             {opportunity.details}
           </div>
+          {isLearnership && (learnership as any).applyLink && (
+            <div className="mt-6 p-4 bg-accent/10 border border-accent rounded-lg">
+              <a 
+                href={(learnership as any).applyLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent font-semibold hover:underline text-lg"
+                data-testid="link-apply-learnership"
+              >
+                Click here to apply !!!
+              </a>
+            </div>
+          )}
           <div className="mt-8 flex gap-3">
             <Button variant="default" onClick={() => navigate(-1)}>Go Back</Button>
             <Button variant="outline" asChild>

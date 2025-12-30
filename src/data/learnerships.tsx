@@ -2,12 +2,14 @@ export interface Learnership {
   title: string;
   key: string;
   details: JSX.Element;
+  applyLink?: string;
 }
 
 const learnerships: Learnership[] = [
   {
     title: "MICT SETA: ICT & Digital Skills Learnership",
     key: "mict-seta",
+    applyLink: "https://www.mict.org.za/learnerships/",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> MICT SETA offers accredited learnerships in ICT and digital skills, combining classroom learning with workplace experience in systems development, IT support, and digital marketing.</p>
@@ -37,6 +39,7 @@ const learnerships: Learnership[] = [
   {
     title: "MERSETA: Engineering & Manufacturing Learnership",
     key: "merseta",
+    applyLink: "https://www.merseta.org.za/skills-development/curriculum-learning-programmes/learnerships/",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> MERSETA provides learnerships in engineering and manufacturing sectors including welding, fitting, turning, and mechanical engineering roles.</p>
@@ -66,6 +69,7 @@ const learnerships: Learnership[] = [
   {
     title: "W&RSETA: Retail Operations Learnership",
     key: "wrseta",
+    applyLink: "https://www.wrseta.org.za/about-us/skills-development/learnerships-qualifications",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> Wholesale and Retail SETA offers learnerships in retail operations, sales, and stock control with practical experience in the retail sector.</p>
@@ -95,6 +99,7 @@ const learnerships: Learnership[] = [
   {
     title: "BANKSETA: Banking & Finance Learnership",
     key: "bankseta",
+    applyLink: "https://www.sseta.co.za/2025/12/2026-learnerships/",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> Banking sector learnerships offering structured training and on-the-job experience in banking and financial services roles.</p>
@@ -125,6 +130,7 @@ const learnerships: Learnership[] = [
   {
     title: "UIF-LAP: Free 12-Month Learnership Programme",
     key: "uif-lap",
+    applyLink: "https://youthopportunitieshub.com/uif-lap-wholesale-retail-learnership-programme-2025-2026/",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> UIF Labour Activation Programme offers free learnerships across multiple sectors including Agriculture, Construction, ICT, Environmental practice, and Admin roles.</p>
@@ -156,6 +162,7 @@ const learnerships: Learnership[] = [
   {
     title: "Department Learnerships: Agriculture & Rural Development",
     key: "dept-agriculture",
+    applyLink: "https://erecruitment.dha.gov.za/",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> Department of Agriculture & Rural Development offers learnerships in agricultural and rural development with NQF Level 2-4 qualifications.</p>
@@ -186,6 +193,7 @@ const learnerships: Learnership[] = [
   {
     title: "LearnMe Learnership 2026: Business Admin & Marketing",
     key: "learnme",
+    applyLink: "https://www.learnme.co.za/",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> LearnMe offers business administration, marketing, and contact centre support learnerships across major South African cities with practical workplace experience.</p>
@@ -219,6 +227,7 @@ const learnerships: Learnership[] = [
   {
     title: "YES Learnership: National Youth Employment Service",
     key: "yes-learnership",
+    applyLink: "https://www.yes.org.za/",
     details: (
       <div className="space-y-4">
         <p><strong>About:</strong> National Youth Service (YES) offers 12-month paid work experience and skills development through various companies and public sector partners across South Africa.</p>
