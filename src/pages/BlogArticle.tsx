@@ -347,19 +347,13 @@ const BlogArticle = () => {
                       {isTopInternshipsGuide ? "Graduate and early-career opportunities across South Africa for 2026." : "Gain nationally recognised qualifications with workplace experience and stipends."}
                     </p>
 
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <User className="h-4 w-4" />
-                      <span>Internships24</span>
-                    </div>
-                    {item.applyLink ? (
-                      <Button variant="accent" size="sm" asChild onClick={(e) => e.stopPropagation()}>
-                        <a href={item.applyLink} target="_blank" rel="noopener noreferrer">Click here to apply !!!</a>
-                      </Button>
-                    ) : (
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <User className="h-4 w-4" />
+                        <span>Internships24</span>
+                      </div>
                       <Button variant="outline" size="sm" onClick={(e) => { e.stopPropagation(); navigate(`/internship/${item.key}`); }}>View Details</Button>
-                    )}
-                  </div>
+                    </div>
                   </article>
                 </div>
               ))}

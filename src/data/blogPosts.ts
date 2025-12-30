@@ -90,6 +90,18 @@ Internships24 is an independent informational website. We do not guarantee job p
 
 Finding a learnership can be life-changing for South African youth. Learnerships combine theoretical learning with practical workplace experience, leading to a nationally recognised qualification.
 
+### 1. BANKSETA: Banking & Finance Learnership
+[Click here to apply !!!](https://www.bankseta.org.za/skills-development/learning-programmes/learnerships/)
+
+### 2. UIF-LAP: Free 12-Month Learnership Programme
+[Click here to apply !!!](https://youthopportunitieshub.com/uif-lap-wholesale-retail-learnership-programme-2025-2026/)
+
+### 3. LearnMe Learnership 2026
+[Click here to apply !!!](https://www.learnme.co.za/)
+
+### 4. YES Learnership: National Youth Employment Service
+[Click here to apply !!!](https://www.yes.org.za/)
+
 ## What is a Learnership?
 
 A learnership is a work-based learning programme that leads to an NQF-registered qualification. It involves:
