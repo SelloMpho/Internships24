@@ -28,7 +28,7 @@ export function HeroSection() {
 
             {/* Headline */}
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              Find Verified Internships & Learnerships in{" "}
+              Latest 2026 / 2027 Internships & Learnerships in{" "}
               <span className="text-accent">South Africa</span>
             </h1>
 
