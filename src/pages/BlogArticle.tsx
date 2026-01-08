@@ -405,43 +405,76 @@ const BlogArticle = () => {
 
 // Simple markdown-like content formatter
 function formatContent(content: string): string {
-  return content
-    .split('\n')
-    .map(line => {
-      // Headers
-      if (line.startsWith('## ')) {
-        return `<h2 class="text-2xl font-bold mt-8 mb-4">${line.slice(3)}</h2>`;
+  const lines = content.split('\n');
+  const result: string[] = [];
+  const chunkSize = 8;
+  const flushBuffer = (buf: string[]) => {
+    if (buf.length === 0) return;
+    const joined = buf.join(' ');
+    result.push(`<p class="my-4">${joined}</p>`);
+    buf.length = 0;
+  };
+  let i = 0;
+  let paragraphBuffer: string[] = [];
+  while (i < lines.length) {
+    let line = lines[i];
+    if (line.startsWith('## ')) {
+      flushBuffer(paragraphBuffer);
+      result.push(`<h2 class="text-2xl font-bold mt-8 mb-4">${line.slice(3)}</h2>`);
+      i++;
+      continue;
+    }
+    if (line.startsWith('### ')) {
+      flushBuffer(paragraphBuffer);
+      result.push(`<h3 class="text-xl font-semibold mt-6 mb-3">${line.slice(4)}</h3>`);
+      i++;
+      continue;
+    }
+    if (line.includes('🚩') || line.includes('⚠️')) {
+      flushBuffer(paragraphBuffer);
+      result.push(`<p class="bg-destructive/10 p-3 rounded-lg my-2">${line}</p>`);
+      i++;
+      continue;
+    }
+    if (line.includes('[Click here to apply !!!]')) {
+      flushBuffer(paragraphBuffer);
+      const url = line.match(/\((.*?)\)/)?.[1] || '#';
+      result.push(`<div class="my-6"><a href="${url}" target="_blank" rel="noopener noreferrer" class="inline-block bg-accent text-accent-foreground px-6 py-3 rounded-lg font-bold hover:bg-accent/90 transition-colors shadow-lg animate-pulse">Click here to apply !!!</a></div>`);
+      i++;
+      continue;
+    }
+    if (line.trim() === '') {
+      flushBuffer(paragraphBuffer);
+      i++;
+      continue;
+    }
+    const isDash = (s: string) => s.startsWith('- ');
+    const isNumbered = (s: string) => /^\d+\.\s/.test(s);
+    if (isDash(line) || isNumbered(line)) {
+      flushBuffer(paragraphBuffer);
+      const items: string[] = [];
+      while (i < lines.length && (isDash(lines[i]) || isNumbered(lines[i]))) {
+        const raw = lines[i].replace(/^\d+\.\s/, '').replace(/^- /, '');
+        const bolded = raw.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').trim();
+        const sentence = /[.!?]$/.test(bolded) ? bolded : `${bolded}.`;
+        items.push(sentence);
+        i++;
       }
-      if (line.startsWith('### ')) {
-        return `<h3 class="text-xl font-semibold mt-6 mb-3">${line.slice(4)}</h3>`;
+      for (let start = 0; start < items.length; start += chunkSize) {
+        const chunk = items.slice(start, start + chunkSize).join(' ');
+        result.push(`<p class="my-4">${chunk}</p>`);
       }
-      // Bold text
-      line = line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-      // Lists
-      if (line.startsWith('- ')) {
-        return `<li class="ml-4">${line.slice(2)}</li>`;
-      }
-      // Numbered lists
-      if (/^\d+\.\s/.test(line)) {
-        return `<li class="ml-4">${line.replace(/^\d+\.\s/, '')}</li>`;
-      }
-      // Warning/emoji lines
-      if (line.includes('🚩') || line.includes('⚠️')) {
-        return `<p class="bg-destructive/10 p-3 rounded-lg my-2">${line}</p>`;
-      }
-      // Internal Link design
-      if (line.includes('[Click here to apply !!!]')) {
-        const url = line.match(/\((.*?)\)/)?.[1] || '#';
-        return `<div class="my-6"><a href="${url}" target="_blank" rel="noopener noreferrer" class="inline-block bg-accent text-accent-foreground px-6 py-3 rounded-lg font-bold hover:bg-accent/90 transition-colors shadow-lg animate-pulse">Click here to apply !!!</a></div>`;
-      }
-      // Empty lines
-      if (line.trim() === '') {
-        return '';
-      }
-      // Regular paragraphs
-      return `<p class="my-4">${line}</p>`;
-    })
-    .join('\n');
+      continue;
+    }
+    const processed = line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    paragraphBuffer.push(processed);
+    if (paragraphBuffer.length === chunkSize) {
+      flushBuffer(paragraphBuffer);
+    }
+    i++;
+  }
+  flushBuffer(paragraphBuffer);
+  return result.join('\n');
 }
 
 export default BlogArticle;
