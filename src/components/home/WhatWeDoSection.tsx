@@ -4,22 +4,26 @@ const features = [
   {
     icon: Search,
     title: "Curated Opportunities",
-    description: "We research and compile internships, learnerships, graduate programmes, and bursaries from trusted sources across South Africa.",
+    description:
+      "We carefully research, review, and compile internships, learnerships, graduate programmes, and bursaries from trusted public sources across South Africa. Our goal is to make it easier for students and job seekers to discover legitimate opportunities without needing to search multiple platforms.",
   },
   {
     icon: FileText,
     title: "Career Guidance",
-    description: "Our articles help you understand the application process, build your CV, and prepare for interviews.",
+    description:
+      "Our educational articles and guides help you understand application requirements, improve your CV and cover letter, prepare for interviews, and make informed career decisions. The content is designed to support students and graduates at different stages of their career journey.",
   },
   {
     icon: Shield,
     title: "Scam Protection",
-    description: "We verify listings and provide tips to help you identify and avoid fraudulent job opportunities.",
+    description:
+      "We promote safe job searching by verifying listings against official sources and sharing clear guidance on how to identify and avoid scams. We also educate users on common warning signs, such as payment requests and unverified contacts, to help protect personal information.",
   },
   {
     icon: Lightbulb,
     title: "Free Resources",
-    description: "All our content is free to access. We believe career information should be available to everyone.",
+    description:
+      "All resources on Internships24 are completely free to access. We do not charge application fees or require subscriptions. Our mission is to make career information and guidance accessible to everyone, regardless of background or financial situation.",
   },
 ];
 
@@ -35,8 +39,10 @@ export function WhatWeDoSection() {
             Your Gateway to Career Opportunities
           </h2>
           <p className="text-muted-foreground text-lg">
-            Internships24 is an information platform that connects South African youth with career opportunities. 
-            We are not a recruitment agency — we help you find and apply for opportunities independently.
+            Internships24 is an independent information platform that helps South African youth discover career
+            opportunities such as internships, learnerships, graduate programmes, and bursaries. We do not act
+            as a recruitment agency or employer — instead, we provide guidance and direct links so users can
+            apply independently through official channels.
           </p>
         </div>
 

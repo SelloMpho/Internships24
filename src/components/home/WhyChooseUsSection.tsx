@@ -4,32 +4,38 @@ const reasons = [
   {
     icon: MapPin,
     title: "South Africa Focused",
-    description: "All opportunities are specifically for South African graduates and students.",
+    description:
+      "All opportunities shared on Internships24 are relevant to South African students, graduates, and job seekers. We focus on local programmes, companies, SETAs, and government initiatives so users can easily find opportunities that match South African eligibility requirements.",
   },
   {
     icon: DollarSign,
     title: "Completely Free",
-    description: "No hidden fees, no premium tiers. Access all information for free.",
+    description:
+      "Internships24 is free to use with no hidden fees, subscriptions, or premium access. You can browse opportunities, read guides, and access resources without paying anything at any stage of your job search.",
   },
   {
     icon: RefreshCw,
     title: "Regularly Updated",
-    description: "We continuously add new opportunities and remove expired listings.",
+    description:
+      "We regularly review and update listings to keep information relevant. New internships, learnerships, and graduate programmes are added frequently, while expired or outdated opportunities are removed where possible.",
   },
   {
     icon: BookOpen,
     title: "Career Guidance",
-    description: "Expert articles on CVs, interviews, and navigating the job market.",
+    description:
+      "In addition to listings, we publish practical career guidance articles covering CV writing, interview preparation, application tips, and understanding different career pathways to help users make informed decisions.",
   },
   {
     icon: Shield,
     title: "Verified Listings",
-    description: "We verify opportunities to protect you from scams and fake postings.",
+    description:
+      "We source opportunities from official company websites, government portals, and trusted organisations. While users should always verify details independently, we aim to reduce exposure to scams and misleading job postings.",
   },
   {
     icon: Users,
     title: "Community Driven",
-    description: "Built by South Africans who understand the local job market.",
+    description:
+      "Internships24 is built by South Africans who understand the local education and employment landscape. Our content is shaped by real challenges faced by students and graduates navigating the South African job market.",
   },
 ];
 
@@ -46,8 +52,9 @@ export function WhyChooseUsSection() {
               The Trusted Platform for Your Career Journey
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              We understand the challenges South African graduates face. That&apos;s why we created 
-              a platform that makes finding opportunities easier, safer, and completely free.
+              We understand the challenges South African students and graduates face when searching for
+              opportunities. Internships24 was created to make career information easier to access,
+              safer to navigate, and available to everyone at no cost.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-4">
@@ -77,10 +84,10 @@ export function WhyChooseUsSection() {
             <div className="aspect-square rounded-2xl gradient-primary p-8 flex items-center justify-center">
               <div className="text-center text-primary-foreground">
                 <div className="text-6xl md:text-7xl font-heading font-extrabold mb-2">100+</div>
-                <div className="text-xl text-primary-foreground/80">Users Helped</div>
+                <div className="text-xl text-primary-foreground/80">Users Reached</div>
                 <div className="mt-6 pt-6 border-t border-primary-foreground/20">
                   <div className="text-3xl md:text-4xl font-heading font-bold mb-1">100+</div>
-                  <div className="text-primary-foreground/70">Active Opportunities</div>
+                  <div className="text-primary-foreground/70">Active Listings Shared</div>
                 </div>
               </div>
             </div>

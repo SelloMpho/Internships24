@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Users, Briefcase, GraduationCap } from "lucide-react";
 
 const stats = [
-  { icon: Briefcase, label: "Opportunities", value: "100+" },
-  { icon: Users, label: "Users Helped", value: "100+" },
-  { icon: GraduationCap, label: "Success Stories", value: "100+" },
+  { icon: Briefcase, label: "Opportunities Shared", value: "100+" },
+  { icon: Users, label: "Users Reached", value: "100+" },
+  { icon: GraduationCap, label: "Career Resources Published", value: "100+" },
 ];
 
 export function HeroSection() {
@@ -23,23 +23,34 @@ export function HeroSection() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground text-sm font-medium mb-6 animate-fade-up">
               <span className="flex h-2 w-2 rounded-full bg-accent animate-pulse" />
-              South Africa&apos;s Career Resource Platform
+              South Africa&apos;s Career Information Platform
             </div>
 
             {/* Headline */}
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <h1
+              className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-6 animate-fade-up"
+              style={{ animationDelay: "0.1s" }}
+            >
               Latest 2026 / 2027 Internships & Learnerships in{" "}
               <span className="text-accent">South Africa</span>
             </h1>
 
             {/* Subheading */}
-            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              Helping graduates, students, and unemployed youth access real career opportunities. 
-              Free, verified, and regularly updated listings.
+            <p
+              className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 animate-fade-up"
+              style={{ animationDelay: "0.2s" }}
+            >
+              Internships24 helps students, graduates, and unemployed youth discover
+              internships, learnerships, graduate programmes, and career guidance
+              from trusted public sources. We provide information to support your
+              job search — applications are made directly with employers.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            <div
+              className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-up"
+              style={{ animationDelay: "0.3s" }}
+            >
               <Button variant="hero" size="xl" asChild>
                 <Link to="/blog">
                   Browse Opportunities
@@ -52,24 +63,30 @@ export function HeroSection() {
             </div>
 
             {/* Trust Signals */}
-            <div className="flex flex-wrap items-center justify-center gap-6 text-primary-foreground/70 text-sm animate-fade-up" style={{ animationDelay: "0.4s" }}>
+            <div
+              className="flex flex-wrap items-center justify-center gap-6 text-primary-foreground/70 text-sm animate-fade-up"
+              style={{ animationDelay: "0.4s" }}
+            >
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-accent" />
-                <span>100% Free Access</span>
+                <span>Free Access to Information</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-accent" />
-                <span>Verified Opportunities</span>
+                <span>Listings from Public & Trusted Sources</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-accent" />
-                <span>Regular Updates</span>
+                <span>Content Updated Regularly</span>
               </div>
             </div>
           </div>
 
           {/* Stats */}
-          <div className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.5s" }}>
+          <div
+            className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-up"
+            style={{ animationDelay: "0.5s" }}
+          >
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent/20 text-accent mb-3">
@@ -78,7 +95,9 @@ export function HeroSection() {
                 <div className="font-heading text-2xl md:text-3xl font-bold text-primary-foreground">
                   {stat.value}
                 </div>
-                <div className="text-sm text-primary-foreground/60">{stat.label}</div>
+                <div className="text-sm text-primary-foreground/60">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>

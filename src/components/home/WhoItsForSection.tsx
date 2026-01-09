@@ -4,22 +4,26 @@ const audiences = [
   {
     icon: GraduationCap,
     title: "University Graduates",
-    description: "Recent graduates looking for their first professional experience in their field of study.",
+    description:
+      "Recent university graduates who have completed diplomas or degrees and are seeking their first professional work experience. This includes graduates looking for internships, graduate programmes, or entry-level roles that help them apply academic knowledge in real-world work environments.",
   },
   {
     icon: BookOpen,
     title: "TVET Students",
-    description: "Technical and vocational students seeking practical workplace experience and learnerships.",
+    description:
+      "Students and graduates from TVET colleges who are pursuing technical or vocational careers and are looking for learnerships, apprenticeships, or workplace-based training opportunities to gain practical skills and industry exposure.",
   },
   {
     icon: Building2,
     title: "Current Students",
-    description: "Students looking for vacation work, part-time internships, or bursary opportunities.",
+    description:
+      "High school learners, TVET students, and university students who are still studying and are searching for vacation work, part-time internships, bursaries, or funding opportunities to support their education and gain early career experience.",
   },
   {
     icon: UserSearch,
     title: "Unemployed Youth",
-    description: "Young job seekers looking for entry-level opportunities to start their careers.",
+    description:
+      "Young South Africans who are currently unemployed and actively seeking entry-level opportunities, skills development programmes, or work experience initiatives that can help them enter the job market and build employability.",
   },
 ];
 
@@ -35,8 +39,9 @@ export function WhoItsForSection() {
             Supporting South African Youth
           </h2>
           <p className="text-muted-foreground text-lg">
-            Whether you&apos;re a fresh graduate, current student, or looking to start your career, 
-            Internships24 has resources for you.
+            Internships24 is designed to support South African youth at different stages of their education
+            and career journey. Whether you are studying, recently graduated, or searching for your first
+            opportunity, our platform provides guidance and information to help you explore available options.
           </p>
         </div>
 
