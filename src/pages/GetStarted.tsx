@@ -17,22 +17,22 @@ const steps = [
   {
     icon: Search,
     title: "Browse Opportunities",
-    description: "Explore our curated listings of internships, learnerships, graduate programmes, and bursaries. Use categories to find opportunities that match your qualifications.",
+    description: "Start by exploring our carefully curated listings of internships, learnerships, graduate programmes, and bursaries available across South Africa. Use categories and filters to narrow down opportunities that align with your field of study, qualifications, and career interests. New opportunities are added regularly, so checking back often is recommended.",
   },
   {
     icon: FileText,
-    title: "Read the Details",
-    description: "Click on any opportunity to see full details including requirements, deadlines, and application instructions. Make sure you meet the eligibility criteria.",
+    title: "Read the Details Carefully",
+    description: "Open each opportunity to view the full description, including minimum requirements, age limits (if any), closing dates, and application instructions. Take time to read everything thoroughly to ensure you meet the eligibility criteria before applying. This helps you avoid wasting time on applications that may not be suitable.",
   },
   {
     icon: Send,
-    title: "Apply Directly",
-    description: "Follow the application link to the official company or organisation website. Submit your application directly to them — never through third-party sites charging fees.",
+    title: "Apply Directly to the Source",
+    description: "When you are ready, follow the provided application link to the official company, organisation, or government website. Applications should always be submitted directly to the employer or programme provider. Internships24 never asks for payment and does not collect applications on your behalf.",
   },
   {
     icon: CheckCircle2,
     title: "Track & Follow Up",
-    description: "Keep records of your applications. Follow up professionally if you don't hear back within the stated timeframe.",
+    description: "Keep a simple record of where and when you have applied, including closing dates and reference numbers if provided. If you do not receive feedback within the expected timeframe, it is acceptable to follow up professionally using the contact details supplied in the advert.",
   },
 ];
 
@@ -40,26 +40,26 @@ const tips = [
   {
     icon: Lightbulb,
     title: "Tailor Your CV",
-    description: "Customise your CV for each application. Highlight relevant skills and experiences that match the job requirements.",
+    description: "Avoid sending the same CV to every opportunity. Instead, adjust your CV to highlight the skills, subjects, and experiences that are most relevant to each role. Even small changes can significantly improve your chances of being shortlisted.",
   },
   {
     icon: Clock,
     title: "Apply Early",
-    description: "Don't wait until the deadline. Many companies review applications on a rolling basis and may close early if they find suitable candidates.",
+    description: "Do not wait until the closing date to submit your application. Many employers review applications as they are received and may stop the process once suitable candidates are found. Applying early also gives you time to correct mistakes if needed.",
   },
   {
     icon: Shield,
     title: "Verify Opportunities",
-    description: "Always verify the legitimacy of opportunities. Check company websites directly and be wary of vague job descriptions.",
+    description: "Always double-check opportunity details by visiting the official company or organisation website. Be cautious of adverts that lack contact information, have unclear requirements, or pressure you to act urgently. Legitimate opportunities are transparent and professional.",
   },
 ];
 
 const scamWarnings = [
-  "Never pay for job applications or placements",
-  "Be suspicious of guaranteed job offers without interviews",
-  "Verify company details on their official website",
-  "Don't share sensitive personal information upfront",
-  "Report suspicious listings to us immediately",
+  "Never pay money to apply for a job, internship, or learnership",
+  "Be cautious of guaranteed job offers without interviews or assessments",
+  "Confirm company details using official websites and verified contact information",
+  "Do not share banking details, passwords, or ID documents upfront",
+  "Report any suspicious listings or messages to us immediately",
 ];
 
 const GetStarted = () => {
@@ -72,9 +72,13 @@ const GetStarted = () => {
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-primary-foreground mb-6">
               How to Use Internships24
             </h1>
-            <p className="text-lg text-primary-foreground/80">
-              Your step-by-step guide to finding and applying for career opportunities 
-              in South Africa. Let&apos;s get you started on your path to success.
+            <p className="text-lg text-primary-foreground/80 leading-relaxed">
+              This page walks you through exactly how to use Internships24 to find and apply
+              for legitimate career opportunities in South Africa.
+              <br /><br />
+              Whether you are a student, recent graduate, or unemployed job seeker, these
+              steps will help you navigate the application process with confidence and avoid
+              common mistakes.
             </p>
           </div>
         </div>
@@ -90,6 +94,10 @@ const GetStarted = () => {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
               Four Simple Steps to Find Your Opportunity
             </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Finding the right opportunity does not have to be complicated. Follow these
+              four steps to move from browsing to applying in a clear and organised way.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -127,6 +135,10 @@ const GetStarted = () => {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
               Tips for Successful Applications
             </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Small improvements in how you apply can make a big difference. Use the tips
+              below to increase your chances of success.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -165,7 +177,7 @@ const GetStarted = () => {
                     Avoid Scams
                   </h2>
                   <p className="text-muted-foreground">
-                    Protect yourself from fraudulent opportunities
+                    Stay informed and protect yourself from fraud
                   </p>
                 </div>
               </div>
@@ -180,9 +192,12 @@ const GetStarted = () => {
               </ul>
 
               <p className="mt-6 text-sm text-muted-foreground">
-                If you encounter a suspicious listing or believe you&apos;ve been targeted by a scam, 
-                please <Link to="/contact" className="text-accent hover:underline">contact us</Link> immediately 
-                so we can investigate and protect other users.
+                If you come across a suspicious opportunity or believe you may have been
+                targeted by a scam, please{" "}
+                <Link to="/contact" className="text-accent hover:underline">
+                  contact us
+                </Link>{" "}
+                immediately. Your report helps us protect other job seekers.
               </p>
             </div>
           </div>
@@ -196,9 +211,10 @@ const GetStarted = () => {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
               Ready to Find Your Opportunity?
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8">
-              Browse hundreds of verified internships, learnerships, and career opportunities 
-              across South Africa.
+            <p className="text-lg text-primary-foreground/80 leading-relaxed mb-8">
+              Start exploring hundreds of verified internships, learnerships, and graduate
+              opportunities available across South Africa — all in one place and completely
+              free to access.
             </p>
             <Button variant="hero" size="xl" asChild>
               <Link to="/blog">

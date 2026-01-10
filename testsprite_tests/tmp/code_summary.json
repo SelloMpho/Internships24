@@ -1,0 +1,95 @@
+{
+  "tech_stack": [
+    "TypeScript",
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "Shadcn UI",
+    "React Router DOM",
+    "TanStack Query",
+    "Zod",
+    "React Hook Form"
+  ],
+  "features": [
+    {
+      "name": "Pages",
+      "description": "Main application pages including Home, Get Started, Blog, and details pages.",
+      "files": [
+        "src/pages/Index.tsx",
+        "src/pages/GetStarted.tsx",
+        "src/pages/InternshipDetail.tsx",
+        "src/pages/Blog.tsx",
+        "src/pages/BlogArticle.tsx",
+        "src/pages/About.tsx",
+        "src/pages/Contact.tsx",
+        "src/pages/Privacy.tsx",
+        "src/pages/Terms.tsx",
+        "src/pages/Disclaimer.tsx",
+        "src/pages/NotFound.tsx"
+      ]
+    },
+    {
+      "name": "Home Sections",
+      "description": "Components specific to the landing page sections.",
+      "files": [
+        "src/components/home/HeroSection.tsx",
+        "src/components/home/CategoriesSection.tsx",
+        "src/components/home/CTASection.tsx",
+        "src/components/home/FAQSection.tsx",
+        "src/components/home/WhatWeDoSection.tsx",
+        "src/components/home/WhoItsForSection.tsx",
+        "src/components/home/WhyChooseUsSection.tsx"
+      ]
+    },
+    {
+      "name": "Layout Components",
+      "description": "Global layout components including Header, Footer, and main Layout wrapper.",
+      "files": [
+        "src/components/layout/Layout.tsx",
+        "src/components/layout/Header.tsx",
+        "src/components/layout/Footer.tsx",
+        "src/components/Navlink.tsx"
+      ]
+    },
+    {
+      "name": "Data Management",
+      "description": "Static data files for internships, learnerships, and blog posts.",
+      "files": [
+        "src/data/internships.tsx",
+        "src/data/learnerships.tsx",
+        "src/data/blogPosts.ts"
+      ]
+    },
+    {
+      "name": "UI Library",
+      "description": "Reusable UI components built with Shadcn UI and Radix primitives.",
+      "files": [
+        "src/components/ui/button.tsx",
+        "src/components/ui/card.tsx",
+        "src/components/ui/input.tsx",
+        "src/components/ui/accordion.tsx",
+        "src/components/ui/dialog.tsx",
+        "src/components/ui/form.tsx",
+        "src/components/ui/select.tsx",
+        "src/components/ui/sheet.tsx",
+        "src/components/ui/toast.tsx",
+        "src/components/ui/sonner.tsx"
+      ]
+    },
+    {
+      "name": "Hooks",
+      "description": "Custom React hooks for functionality like mobile detection and toasts.",
+      "files": [
+        "src/hooks/use-mobile.tsx",
+        "src/hooks/use-toast.ts"
+      ]
+    },
+    {
+      "name": "Utilities",
+      "description": "Utility functions and helpers.",
+      "files": [
+        "src/lib/utils.ts"
+      ]
+    }
+  ]
+}

@@ -14,9 +14,19 @@ const Blog = () => {
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-primary-foreground mb-6">
               Career Resources & Opportunities
             </h1>
-            <p className="text-lg text-primary-foreground/80">
-              Explore our latest articles on internships, learnerships, graduate programmes, 
-              and career advice tailored for South African youth.
+            <p className="text-lg text-primary-foreground/80 leading-relaxed">
+              Welcome to the Internships24 resource hub — a dedicated space where South African
+              students, graduates, and job seekers can access reliable career information in
+              one place.
+              <br /><br />
+              Our articles cover internships, learnerships, graduate programmes, bursaries,
+              and entry-level opportunities, along with practical career guidance to help
+              you prepare, apply, and succeed. Whether you are still studying or actively
+              looking for work, our goal is to make your career journey clearer and less
+              stressful.
+              <br /><br />
+              All content is written with the South African job market in mind and is designed
+              to be easy to understand, relevant, and actionable.
             </p>
           </div>
         </div>
@@ -52,11 +62,11 @@ const Blog = () => {
                       {post.category}
                     </span>
                   </div>
-                  
+
                   <h2 className="font-heading text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors line-clamp-2">
                     {post.title}
                   </h2>
-                  
+
                   <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
@@ -78,7 +88,7 @@ const Blog = () => {
                       <span>{post.author}</span>
                     </div>
                     <span className="text-accent group-hover:translate-x-1 transition-transform inline-flex items-center text-sm font-medium">
-                      Read More
+                      Read Full Article
                       <ArrowRight className="ml-1 h-4 w-4" />
                     </span>
                   </div>
@@ -90,7 +100,7 @@ const Blog = () => {
           {/* Load More */}
           <div className="text-center mt-12">
             <Button variant="outline" size="lg">
-              Load More Articles
+              Load More Career Articles
             </Button>
           </div>
         </div>
@@ -101,11 +111,15 @@ const Blog = () => {
         <div className="container-main">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Stay Updated
+              Stay Updated With New Opportunities
             </h2>
-            <p className="text-muted-foreground mb-6">
-              Check back regularly for new opportunities and career tips. Bookmark this page 
-              to never miss an update.
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              New internships, learnerships, and graduate programmes are published regularly.
+              We recommend checking this page often or bookmarking it so you never miss an
+              opportunity that could shape your future.
+              <br /><br />
+              If you are unsure where to start or how to apply, we also provide guidance to
+              help you understand application requirements and improve your chances.
             </p>
             <Button variant="accent" size="lg" asChild>
               <Link to="/get-started">

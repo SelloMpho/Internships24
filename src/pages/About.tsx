@@ -5,42 +5,58 @@ const values = [
   {
     icon: Target,
     title: "Mission-Driven",
-    description: "We exist to help South African youth access opportunities that can change their lives.",
+    description:
+      "Everything we do is focused on helping South African youth access real, life-changing career opportunities.",
   },
   {
     icon: Eye,
     title: "Transparency",
-    description: "We are clear about who we are and what we offer — no hidden agendas.",
+    description:
+      "We believe in honesty, clarity, and trust. No misleading claims, no hidden costs, and no false promises.",
   },
   {
     icon: Users,
     title: "Community First",
-    description: "Built by South Africans who understand the unique challenges of our job market.",
+    description:
+      "Built by South Africans for South Africans, with a deep understanding of local education and employment challenges.",
   },
   {
     icon: Heart,
     title: "Accessibility",
-    description: "Career information should be free and available to everyone, regardless of background.",
+    description:
+      "We are committed to keeping career information free, simple, and accessible to everyone, regardless of background.",
   },
 ];
 
 const About = () => {
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="gradient-primary section-padding">
-        <div className="container-main">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-primary-foreground mb-6">
-              About Internships24
-            </h1>
-            <p className="text-lg text-primary-foreground/80">
-              Your trusted partner in navigating the South African job market. We connect 
-              graduates and students with verified career opportunities.
-            </p>
-          </div>
-        </div>
-      </section>
+{/* Hero Section */}
+<section className="gradient-primary section-padding">
+  <div className="container-main">
+    <div className="max-w-3xl mx-auto text-center">
+      <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-primary-foreground mb-6">
+        About Internships24
+      </h1>
+      <p className="text-lg text-primary-foreground/80 leading-relaxed">
+        Internships24 is a South African career information platform created to support
+        students, graduates, and unemployed youth who are trying to take their first
+        steps into the working world.
+        <br /><br />
+        We understand how overwhelming the job market can be — especially when you are
+        searching for internships, learnerships, or entry-level opportunities with little
+        or no work experience. That is why Internships24 exists: to make career information
+        easier to access, easier to understand, and easier to trust.
+        <br /><br />
+        Our platform brings together verified internships, learnerships, graduate programmes,
+        bursaries, and skills development opportunities from reputable organisations across
+        South Africa, all in one place. We focus on clarity, accuracy, and regular updates
+        so that users can spend less time searching and more time applying with confidence.
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Our Story */}
       <section className="section-padding bg-background">
@@ -54,20 +70,24 @@ const About = () => {
             </h2>
             <div className="prose prose-lg text-muted-foreground space-y-4">
               <p>
-                South Africa faces one of the highest youth unemployment rates in the world. 
-                Many graduates and students struggle to find their first opportunity, often 
-                because they don&apos;t know where to look or how to navigate the job market.
+                South Africa faces one of the highest youth unemployment rates in the world.
+                Thousands of capable graduates and students struggle to secure their first
+                opportunity due to limited access to information, experience requirements,
+                and fragmented job listings.
               </p>
               <p>
-                Internships24 was created to bridge this gap. We aggregate internships, 
-                learnerships, graduate programmes, and bursaries from trusted sources across 
-                South Africa, making it easier for you to discover opportunities that match 
-                your qualifications and goals.
+                Internships24 was created to solve this problem by bringing opportunities into
+                one trusted, easy-to-navigate platform. Instead of searching across dozens of
+                websites and social media pages, users can find relevant opportunities in one place.
               </p>
               <p>
-                Our team is passionate about empowering young South Africans. We understand 
-                the challenges you face because we&apos;ve been there. That&apos;s why we&apos;re 
-                committed to providing free, verified, and regularly updated information.
+                We source internships, learnerships, graduate programmes, and bursaries from
+                reputable companies, SETAs, institutions, and public listings, ensuring that
+                our content is accurate, verified, and regularly updated.
+              </p>
+              <p>
+                Our goal is not just to list opportunities, but to empower young South Africans
+                with the knowledge and confidence needed to take meaningful steps toward employment.
               </p>
             </div>
           </div>
@@ -83,9 +103,9 @@ const About = () => {
                 Our Mission
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                To empower South African graduates and students by providing free, reliable, 
-                and up-to-date information about internships, learnerships, and career 
-                opportunities — helping them take the first step toward a successful career.
+                To provide free, reliable, and up-to-date career information that helps South
+                African students and graduates access internships, learnerships, and entry-level
+                opportunities, enabling them to build sustainable careers.
               </p>
             </div>
             <div className="card-elevated p-8">
@@ -93,8 +113,8 @@ const About = () => {
                 Our Vision
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                A South Africa where every young person has access to the information and 
-                resources they need to find meaningful employment and build a prosperous future.
+                A South Africa where every young person, regardless of background or location,
+                has equal access to career opportunities, skills development, and employment pathways.
               </p>
             </div>
           </div>
@@ -135,6 +155,22 @@ const About = () => {
         </div>
       </section>
 
+      {/* Who We Serve */}
+      <section className="section-padding bg-muted">
+        <div className="container-main">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Who Internships24 Is For
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Internships24 serves university students, TVET college students, recent graduates,
+              unemployed youth, and career starters looking for internships, learnerships,
+              graduate programmes, and skills development opportunities within South Africa.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Transparency Statement */}
       <section className="section-padding bg-muted">
         <div className="container-main">
@@ -144,18 +180,20 @@ const About = () => {
             </h2>
             <div className="card-elevated p-8 text-left">
               <p className="text-muted-foreground leading-relaxed mb-4">
-                <strong className="text-foreground">Internships24 is an independent informational website.</strong> We 
-                are not a recruitment agency and do not guarantee job placements. We do not charge 
-                for access to our content, and we never will.
+                <strong className="text-foreground">
+                  Internships24 is an independent informational platform.
+                </strong>{" "}
+                We are not a recruitment agency and do not guarantee placements or employment.
+                All applications are submitted directly to the official organisations.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Our platform may display advertisements and affiliate links to support our 
-                operations. We are committed to clearly labeling any sponsored content.
+                Access to Internships24 is completely free. We do not request payment, banking
+                details, or personal financial information from users.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We are not affiliated with the South African government unless explicitly 
-                stated. All information provided is for educational purposes and should be 
-                verified with official sources before making any decisions.
+                To support platform operations, we may display advertisements or affiliate links.
+                Any sponsored content is clearly disclosed, and users are encouraged to verify
+                opportunities through official sources.
               </p>
             </div>
           </div>

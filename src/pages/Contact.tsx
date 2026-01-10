@@ -125,7 +125,21 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-lg text-primary-foreground/80">
-              Have questions or feedback? We&apos;d love to hear from you. Get in touch 
+                Internships24 is a South African career information platform created to support
+                students, graduates, TVET learners, and unemployed youth by providing access to
+                verified internships, learnerships, graduate programmes, bursaries, and career
+                guidance resources.
+<br /><br />
+                If you have questions about our content, need clarification about an opportunity,
+                or would like to report outdated or incorrect information, you are welcome to
+                contact us using the form below. We value transparency, accuracy, and community
+                feedback, as it helps us improve the quality of information we share.
+<br /><br />
+                Please note that Internships24 does not recruit, hire, or place candidates.
+                All applications are submitted directly to the official employer, institution,
+                or organisation listed in each opportunity.
+
+               We'd love to hear from you. Get in touch 
               and we&apos;ll respond as soon as possible.
             </p>
           </div>
